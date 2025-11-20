@@ -17,7 +17,7 @@ const longZuchini= zucchine.filter(element => {
   if (element.length >= 15) {
     return true
   } else {
-    shortZuchini.push(element) ;
+    shortZuchini.push(element) ;     //avrei poturo "annidare" nell' if un altro filter() per creare un nuovo array inserendo altre condizioni?
   }
 })
 
