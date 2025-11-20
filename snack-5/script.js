@@ -5,7 +5,7 @@ const nums = [2, 8, 4, 7, 12, 87];
 
 //filter()
 
-const numeriPari = nums.filter(element => {
+/*const numeriPari = nums.filter(element => {
     if (element % 2 == 0) {
         return true ;
     } else {
@@ -13,7 +13,16 @@ const numeriPari = nums.filter(element => {
     }
 })
 
-console.log(numeriPari);
+console.log(numeriPari); */
 
 //  (element % 2 == 0) è la condizione secondo cui il filter() decide se l'elemento analizzato
 //può entrare o meno nel nuovo array (che deve essere definito da una variabile)
+
+const numeriPari = nums.filter(element => {
+    return element % 2 == 0 ;
+})
+
+console.log(numeriPari);
+
+// Senza utilizzare l'if, ma solamente fornendo la condizione per la quale devono essere 
+// filtrati gli elementi dell'array originale. 
